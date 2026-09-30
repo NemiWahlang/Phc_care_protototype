@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PHC Care | Meghalaya</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <h1>PHC Care</h1>
+      <p>Check if a doctor is in at your Primary Health Centre before you travel.</p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="card chat" aria-label="Status chatbot">
+      <div class="chat-head">
+        <span class="dot"></span>
+        <div>
+          <strong>Status Bot</strong>
+          <small>Online</small>
+        </div>
+      </div>
+
+      <div class="messages" id="messages">
+        <div class="msg bot">Hi! Type a village name and I'll tell you if a doctor is checked in.</div>
+      </div>
+
+      <form class="composer" id="composer">
+        <input type="text" id="villageInput" placeholder="e.g. Sohra" autocomplete="off" aria-label="Village name" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <aside class="card monitor" aria-label="PHC network">
+      <h2>PHC Network</h2>
+      <p class="hint">Demo panel: press Toggle to simulate a doctor connecting to or leaving the clinic Wi-Fi, then ask the bot about that village.</p>
+      <ul id="phcList" class="phc-list"></ul>
+    </aside>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
