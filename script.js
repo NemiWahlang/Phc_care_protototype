@@ -1,3 +1,4 @@
+
 const messagesEl = document.getElementById("messages");
 const form = document.getElementById("composer");
 const input = document.getElementById("villageInput");
@@ -69,3 +70,4 @@ phcListEl.addEventListener("click", async (event) => {
 });
 
 loadPhcs();
+
